@@ -41,7 +41,8 @@ export default function Home() {
         <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <Link 
             to={createPageUrl('Prompts')}
-            className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-all duration-300 group"
+            className="bg-white rounded-lg p-6 hover:shadow-lg transition-all duration-300 group"
+            style={{ border: '1px solid #CACED3' }}
           >
             <div className="w-16 h-16 bg-amber-50 rounded-xl flex items-center justify-center mb-4">
               <Search className="w-7 h-7 text-amber-600" />
@@ -58,7 +59,8 @@ export default function Home() {
           
           <Link 
             to={createPageUrl('Learn')}
-            className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-all duration-300 group"
+            className="bg-white rounded-lg p-6 hover:shadow-lg transition-all duration-300 group"
+            style={{ border: '1px solid #CACED3' }}
           >
             <div className="w-16 h-16 bg-stone-100 rounded-xl flex items-center justify-center mb-4">
               <BookOpen className="w-7 h-7 text-stone-600" />
