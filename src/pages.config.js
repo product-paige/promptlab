@@ -1,23 +1,23 @@
-import Prompts from './pages/Prompts';
-import SavedPrompts from './pages/SavedPrompts';
-import PromptDetail from './pages/PromptDetail';
-import RequestPrompt from './pages/RequestPrompt';
+import Home from './pages/Home';
 import Learn from './pages/Learn';
 import Profile from './pages/Profile';
+import PromptDetail from './pages/PromptDetail';
+import Prompts from './pages/Prompts';
+import RequestPrompt from './pages/RequestPrompt';
+import SavedPrompts from './pages/SavedPrompts';
 import Support from './pages/Support';
-import Home from './pages/Home';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
-    "Prompts": Prompts,
-    "SavedPrompts": SavedPrompts,
-    "PromptDetail": PromptDetail,
-    "RequestPrompt": RequestPrompt,
+    "Home": Home,
     "Learn": Learn,
     "Profile": Profile,
+    "PromptDetail": PromptDetail,
+    "Prompts": Prompts,
+    "RequestPrompt": RequestPrompt,
+    "SavedPrompts": SavedPrompts,
     "Support": Support,
-    "Home": Home,
 }
 
 export const pagesConfig = {

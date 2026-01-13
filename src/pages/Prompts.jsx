@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/select";
 import PromptCard from '../components/prompts/PromptCard';
 
-const categories = ['All', 'Product Copy', 'Email Marketing', 'Social Media', 'SEO', 'Customer Service', 'Analytics', 'Ads', 'Other'];
+const categories = ['All', 'Copy', 'Sections', 'Images', 'Video / UGC', 'Ads & Campaigns', 'Strategy'];
 const aiTools = ['All', 'ChatGPT', 'Shopify AI', 'Claude', 'Gemini', 'Midjourney'];
 
 export default function Prompts() {
