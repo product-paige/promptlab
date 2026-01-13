@@ -33,8 +33,7 @@ export default function Home() {
             Welcome to the<br />Shopify Prompt<br />Library
           </h1>
           <p className="text-gray-500">
-            We stay true to our word. Your next role is here.<br />
-            Don't hold the ball, get it rolling.
+            Curated, Shopify-ready prompts and playbooks to help you move faster, stay on-brand, and sell more.
           </p>
         </div>
         
