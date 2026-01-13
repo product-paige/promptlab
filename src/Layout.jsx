@@ -49,7 +49,7 @@ export default function Layout({ children, currentPageName }) {
   const isActive = (page) => currentPageName === page;
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA] p-[10px]">
+    <div className="min-h-screen bg-[#F7F7F7] p-[10px]">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap');
         body {
@@ -110,7 +110,7 @@ export default function Layout({ children, currentPageName }) {
       )}
 
       {/* Desktop Sidebar */}
-      <aside className="hidden lg:flex flex-col fixed left-[10px] top-[10px] bottom-[10px] w-64 bg-white border-gray-100 z-30 rounded-lg" style={{ border: '1px solid #CACED3' }}>
+      <aside className="hidden lg:flex flex-col fixed left-[10px] top-[10px] bottom-[10px] w-64 z-30 rounded-lg" style={{ background: '#EFEFEF', border: '1px solid #CACED3' }}>
         <div className="p-6 pb-4">
           <span className="font-semibold text-lg">ProductPrompt™</span>
         </div>
@@ -156,9 +156,9 @@ export default function Layout({ children, currentPageName }) {
       </aside>
 
       {/* Main Content */}
-      <main className="lg:ml-[274px] min-h-screen pt-16 lg:pt-0">
+      <main className="lg:ml-[274px] min-h-screen pt-16 lg:pt-0 bg-white rounded-lg" style={{ margin: '10px', marginLeft: 'calc(274px + 10px)' }}>
         <div className="flex justify-end p-4 lg:p-6">
-          <div className="flex items-center gap-2 bg-gray-100 rounded-full px-4 py-2">
+          <div className="flex items-center gap-2 rounded-full px-4 py-2" style={{ background: '#F7F7F7' }}>
             <span className="text-sm">Hi, 👋</span>
           </div>
         </div>
