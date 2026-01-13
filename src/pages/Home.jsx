@@ -154,6 +154,9 @@ export default function Home() {
           </div>
         </div>
       )}
+      </div>
+      {/* Full width dividers */}
+      <div className="h-px bg-[#CACED3] my-12 -mx-4 lg:-mx-8 w-screen relative left-1/2 -translate-x-1/2" />
     </div>
   );
 }
