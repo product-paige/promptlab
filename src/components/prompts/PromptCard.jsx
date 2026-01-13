@@ -48,7 +48,7 @@ export default function PromptCard({ prompt, isSaved, savedPromptId }) {
   };
 
   return (
-    <div className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 group">
+    <div className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 group" style={{ border: '1px solid #CACED3' }}>
       <div 
         className="h-36 relative"
         style={{ 
