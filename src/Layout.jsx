@@ -122,12 +122,12 @@ export default function Layout({ children, currentPageName }) {
               to={createPageUrl(item.page)}
               className={`flex items-center justify-between px-3 py-2.5 rounded-lg transition-colors ${
                 isActive(item.page) 
-                  ? 'bg-gray-100 text-gray-900' 
+                  ? 'text-gray-900' 
                   : 'text-gray-600'
               }`}
-              style={!isActive(item.page) ? { ':hover': { background: '#F7F7F7' } } : {}}
-              onMouseEnter={(e) => !isActive(item.page) && (e.currentTarget.style.background = '#F7F7F7')}
-              onMouseLeave={(e) => !isActive(item.page) && (e.currentTarget.style.background = '')}
+              style={isActive(item.page) ? { background: '#F7F7F7' } : {}}
+              onMouseEnter={(e) => (e.currentTarget.style.background = '#F7F7F7')}
+              onMouseLeave={(e) => isActive(item.page) ? (e.currentTarget.style.background = '#F7F7F7') : (e.currentTarget.style.background = '')}
             >
               <div className="flex items-center gap-3">
                 <item.icon className="w-4 h-4" />
