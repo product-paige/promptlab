@@ -77,6 +77,9 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Divider */}
+      <div className="h-px bg-[#CACED3] my-12" />
+
       {/* Latest Prompts Section */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-6">
@@ -118,6 +121,38 @@ export default function Home() {
           </div>
         )}
       </div>
+
+      {/* Divider */}
+      <div className="h-px bg-[#CACED3] my-12" />
+
+      {/* Saved Prompts Section */}
+      {savedPrompts.length > 0 && (
+        <div className="mb-8">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-xl font-semibold text-gray-900">Your Saved Prompts</h2>
+            <Link 
+              to={createPageUrl('SavedPrompts')}
+              className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
+            >
+              View all
+            </Link>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {savedPrompts.slice(0, 3).map((savedPrompt) => {
+              const prompt = prompts.find(p => p.id === savedPrompt.prompt_id);
+              return prompt ? (
+                <PromptCard 
+                  key={prompt.id} 
+                  prompt={prompt}
+                  isSaved={true}
+                  savedPromptId={savedPrompt.id}
+                />
+              ) : null;
+            })}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
