@@ -25,7 +25,8 @@ export default function Home() {
   }, {});
 
   return (
-    <div className="max-w-6xl">
+    <div>
+      <div className="max-w-6xl mx-auto px-4 lg:px-8">
       {/* Hero Section */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
         <div className="lg:col-span-1">
