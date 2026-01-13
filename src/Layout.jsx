@@ -156,7 +156,7 @@ export default function Layout({ children, currentPageName }) {
       </aside>
 
       {/* Main Content */}
-      <main className="lg:ml-[284px] pt-16 lg:pt-0 bg-white rounded-lg" style={{ margin: '10px', marginRight: '10px', minHeight: 'calc(100vh - 20px)' }}>
+      <main className="lg:ml-[276px] pt-16 lg:pt-0 bg-white rounded-lg" style={{ margin: '10px', marginLeft: '0', marginRight: '10px', minHeight: 'calc(100vh - 20px)' }}>
         <div className="flex justify-end p-4 lg:p-6">
           <div className="flex items-center gap-2 rounded-full px-4 py-2" style={{ background: '#F7F7F7' }}>
             <span className="text-sm">Hi, 👋</span>
