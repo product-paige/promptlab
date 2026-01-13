@@ -59,7 +59,7 @@ export default function Layout({ children, currentPageName }) {
 
       {/* Mobile Header */}
       <div className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-white border-b border-gray-100 z-50 flex items-center justify-between px-4">
-        <span className="font-semibold text-lg">ductPrompt™</span>
+        <span className="font-semibold text-lg">ProductPrompt™</span>
         <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -109,7 +109,7 @@ export default function Layout({ children, currentPageName }) {
       {/* Desktop Sidebar */}
       <aside className="hidden lg:flex flex-col fixed left-0 top-0 bottom-0 w-56 bg-white border-r border-gray-100 z-30">
         <div className="p-6 pb-4">
-          <span className="font-semibold text-lg">ductPrompt™</span>
+          <span className="font-semibold text-lg">ProductPrompt™</span>
         </div>
 
         <nav className="flex-1 px-3 space-y-1">
