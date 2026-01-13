@@ -110,7 +110,7 @@ export default function Layout({ children, currentPageName }) {
       )}
 
       {/* Desktop Sidebar */}
-      <aside className="hidden lg:flex flex-col fixed left-[10px] top-[10px] bottom-[10px] w-64 z-30 rounded-lg" style={{ background: '#EFEFEF' }}>
+      <aside className="hidden lg:flex flex-col fixed left-[10px] top-[10px] bottom-[10px] w-64 z-30 rounded-lg" style={{ background: '#EFEFEF', border: '1px solid #CACED3' }}>
         <div className="p-6 pb-4">
           <span className="font-semibold text-lg">ProductPrompt™</span>
         </div>
@@ -156,7 +156,7 @@ export default function Layout({ children, currentPageName }) {
       </aside>
 
       {/* Main Content */}
-      <main className="lg:ml-[284px] pt-16 lg:pt-0 bg-white rounded-lg" style={{ margin: '10px', marginRight: '10px', minHeight: 'calc(100vh - 20px)' }}>
+      <main className="lg:ml-[274px] min-h-screen pt-16 lg:pt-0 bg-white rounded-lg" style={{ margin: '10px', marginLeft: 'calc(274px + 10px)' }}>
         <div className="flex justify-end p-4 lg:p-6">
           <div className="flex items-center gap-2 rounded-full px-4 py-2" style={{ background: '#F7F7F7' }}>
             <span className="text-sm">Hi, 👋</span>
