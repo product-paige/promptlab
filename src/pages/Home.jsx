@@ -25,8 +25,7 @@ export default function Home() {
   }, {});
 
   return (
-    <div>
-      <div className="max-w-6xl mx-auto px-4 lg:px-8">
+    <div className="max-w-6xl">
       {/* Hero Section */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
         <div className="lg:col-span-1">
@@ -79,7 +78,7 @@ export default function Home() {
       </div>
 
       {/* Divider */}
-      <div className="h-px bg-[#CACED3] my-12 -mx-4 lg:-mx-8 w-screen relative left-1/2 -translate-x-1/2" />
+      <div className="h-px bg-[#CACED3] my-12" />
 
       {/* Latest Prompts Section */}
       <div className="mb-8">
@@ -124,7 +123,7 @@ export default function Home() {
       </div>
 
       {/* Divider */}
-      <div className="h-px bg-[#CACED3] my-12 -mx-4 lg:-mx-8 w-screen relative left-1/2 -translate-x-1/2" />
+      <div className="h-px bg-[#CACED3] my-12" />
 
       {/* Saved Prompts Section */}
       {savedPrompts.length > 0 && (
@@ -154,7 +153,6 @@ export default function Home() {
           </div>
         </div>
       )}
-      </div>
-      </div>
+    </div>
   );
 }
