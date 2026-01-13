@@ -51,9 +51,12 @@ export default function Layout({ children, currentPageName }) {
   return (
     <div className="min-h-screen bg-[#FAFAFA]">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap');
         body {
-          font-family: 'Inter', sans-serif;
+          font-family: 'Geist', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          font-weight: 500;
         }
       `}</style>
 
