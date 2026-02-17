@@ -124,20 +124,6 @@ export default function PromptDetail() {
       <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
         <div>
           <h1 className="text-2xl font-semibold text-gray-900 mb-2">{prompt.title}</h1>
-          <div className="flex flex-wrap items-center gap-3 text-sm text-gray-500">
-            <span className="flex items-center gap-1">
-              <MapPin className="w-4 h-4" />
-              Onsite, New York
-            </span>
-            <span className="flex items-center gap-1">
-              <Clock className="w-4 h-4" />
-              UTC -5
-            </span>
-            <span className="flex items-center gap-1">
-              <Calendar className="w-4 h-4" />
-              Full-time
-            </span>
-          </div>
         </div>
         
         <div className="flex items-center gap-2">
