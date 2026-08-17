@@ -1,0 +1,31 @@
+{
+  "name": "PromptRequest",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Requested prompt title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of what the prompt should do"
+    },
+    "use_case": {
+      "type": "string",
+      "description": "Use case for the prompt"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "completed"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "title",
+    "description"
+  ]
+}

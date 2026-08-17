@@ -1,0 +1,91 @@
+{
+  "name": "Prompt",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the prompt"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of what the prompt does"
+    },
+    "prompt_text": {
+      "type": "string",
+      "description": "The actual prompt content"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Copy",
+        "Sections",
+        "Images",
+        "Video / UGC",
+        "Ads & Campaigns",
+        "Strategy"
+      ],
+      "description": "Category of the prompt"
+    },
+    "subcategory": {
+      "type": "string",
+      "enum": [
+        "Product pages",
+        "Landing pages",
+        "Headlines",
+        "Email",
+        "FAQs",
+        "Hero",
+        "PDP blocks",
+        "Value props",
+        "Reviews",
+        "Comparison tables",
+        "Bundles",
+        "Product photography",
+        "Lifestyle shots",
+        "Backgrounds",
+        "Mockups",
+        "Hooks",
+        "Scripts",
+        "Shot lists",
+        "Creator briefs",
+        "Meta/TikTok/Google angles",
+        "Creatives",
+        "Audience ideas",
+        "Promo concepts",
+        "Positioning",
+        "Offers",
+        "Brand voice",
+        "CRO ideas",
+        "Testing plans"
+      ],
+      "description": "Subcategory of the prompt"
+    },
+    "ai_tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "AI tools this prompt works with (ChatGPT, Shopify AI, Claude, etc.)"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Cover image URL for the prompt card"
+    },
+    "tutorials": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tutorial bullet points"
+    },
+    "details": {
+      "type": "string",
+      "description": "Detailed explanation of the prompt"
+    }
+  },
+  "required": [
+    "title",
+    "prompt_text",
+    "category"
+  ]
+}

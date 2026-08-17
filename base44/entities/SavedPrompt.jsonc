@@ -1,0 +1,13 @@
+{
+  "name": "SavedPrompt",
+  "type": "object",
+  "properties": {
+    "prompt_id": {
+      "type": "string",
+      "description": "Reference to the saved prompt"
+    }
+  },
+  "required": [
+    "prompt_id"
+  ]
+}
